@@ -4,13 +4,6 @@ Languages: English | [简体中文](README.zh-CN.md) | [繁體中文](README.zh-
 
 This script polls the Outlook `junkemail` folder through Microsoft Graph and moves matching messages back into the `inbox`.
 
-It is conservative by default:
-
-- You must either configure allowlists/keywords.
-- Or explicitly set `OUTLOOK_MOVE_ALL=true` if you really want to move everything from Junk.
-
-## What it does
-
 - Authenticates with Microsoft Graph using device-code login.
 - Looks at recent messages in `junkemail`.
 - Matches them by sender address, sender domain, subject keywords, or body keywords.

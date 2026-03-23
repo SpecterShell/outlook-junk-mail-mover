@@ -4,13 +4,6 @@
 
 这个脚本会通过 Microsoft Graph 轮询 Outlook 的 `junkemail` 文件夹，并将匹配的邮件移回 `inbox`。
 
-它默认采取保守策略：
-
-- 你必须配置允许名单或关键字规则。
-- 或者显式设置 `OUTLOOK_MOVE_ALL=true`，这样才会把垃圾邮件文件夹中的所有邮件都移回收件箱。
-
-## 功能说明
-
 - 使用设备代码登录方式认证 Microsoft Graph。
 - 检查 `junkemail` 中的最近邮件。
 - 按发件人地址、发件人域名、主题关键字或正文关键字进行匹配。
