@@ -1,0 +1,11 @@
+[project]
+name = "outlook-junk-mail-mover"
+version = "0.1.0"
+description = "Poll the Outlook junkemail folder and move matching messages back into the inbox."
+readme = "README.md"
+license = { file = "LICENSE" }
+requires-python = ">=3.12"
+dependencies = [
+    "msal>=1.30.0",
+    "requests>=2.31.0",
+]
